@@ -11,18 +11,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 15rem;
+    padding-top: 7rem;
     padding-bottom: 7rem;
     background: linear-gradient(180deg, rgba(0, 0, 0, 1) 60%, rgba(87, 184, 255, 1) 60%);
   }
 
   @media screen and (max-width: $tabletSmall) {
-    padding-top: 12rem;
-    padding-bottom: 5rem;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
   }
 
   @media screen and (max-width: $phoneBig) {
-    padding-top: 9rem;
+    padding-top: 3rem;
     padding-bottom: 0;
   }
 

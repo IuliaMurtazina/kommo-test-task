@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/kommo-test-task/static/css/main.fc57e358.css",
-    "main.js": "/kommo-test-task/static/js/main.ea2684b7.js",
+    "main.css": "/kommo-test-task/static/css/main.19b582a1.css",
+    "main.js": "/kommo-test-task/static/js/main.0a30f810.js",
     "index.html": "/kommo-test-task/index.html",
-    "main.fc57e358.css.map": "/kommo-test-task/static/css/main.fc57e358.css.map",
-    "main.ea2684b7.js.map": "/kommo-test-task/static/js/main.ea2684b7.js.map"
+    "main.19b582a1.css.map": "/kommo-test-task/static/css/main.19b582a1.css.map",
+    "main.0a30f810.js.map": "/kommo-test-task/static/js/main.0a30f810.js.map"
   },
   "entrypoints": [
-    "static/css/main.fc57e358.css",
-    "static/js/main.ea2684b7.js"
+    "static/css/main.19b582a1.css",
+    "static/js/main.0a30f810.js"
   ]
 }

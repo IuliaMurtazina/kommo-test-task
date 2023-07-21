@@ -1,4 +1,4 @@
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { RouterProvider, createHashRouter } from "react-router-dom";
 import Home from "./pages/Home";
 import RootLayout from "./pages/RootLayout";
 import About from "./pages/About";
@@ -12,7 +12,7 @@ import Modal from "./components/modal/Modal";
 const App: React.FC = () => {
   const { isModalOpen } = useAppSelector((state) => state.ui);
 
-  const router = createBrowserRouter([
+  const router = createHashRouter([
     {
       path: "/",
       element: <RootLayout />,

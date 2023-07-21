@@ -8,6 +8,7 @@ import Pages from "./pages/Pages";
 import { useAppSelector } from "./store/hooks";
 import { createPortal } from "react-dom";
 import Modal from "./components/modal/Modal";
+import NotFound from "./components/NotFound/NotFound";
 
 const App: React.FC = () => {
   const { isModalOpen } = useAppSelector((state) => state.ui);
@@ -37,10 +38,10 @@ const App: React.FC = () => {
           path: "pages",
           element: <Pages />,
         },
-        // {
-        //   path: "*",
-        //   element: <NotFound />,
-        // },
+        {
+          path: "*",
+          element: <NotFound />,
+        },
       ],
     },
   ]);

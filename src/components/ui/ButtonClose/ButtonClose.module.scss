@@ -1,0 +1,32 @@
+@import '../../../style/variables.scss';
+
+.btn-close {
+  position: absolute;
+
+  div {
+
+    &::after,
+    &::before {
+      position: absolute;
+      content: '';
+      width: 4rem;
+      height: 3px;
+      background-color: #fff;
+
+      @media screen and (max-width: $tabletSmall) {
+        width: 3rem;
+        height: 3px;
+      }
+    }
+
+    &::after {
+      transform: rotate(135deg);
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+  }
+
+
+}

@@ -1,0 +1,81 @@
+@import '../../../style/variables.scss';
+
+.section {
+  display: flex;
+  padding-top: 17.5rem;
+  padding-bottom: 25rem;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 56%, rgba(87, 184, 255, 1) 56%);
+  position: relative;
+
+  @media screen and (max-width: $tabletBig) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15rem;
+    padding-bottom: 7rem;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 60%, rgba(87, 184, 255, 1) 60%);
+  }
+
+  @media screen and (max-width: $tabletSmall) {
+    padding-top: 12rem;
+    padding-bottom: 5rem;
+  }
+
+  @media screen and (max-width: $phoneBig) {
+    padding-top: 9rem;
+    padding-bottom: 0;
+  }
+
+  p {
+    color: $color-grey;
+    font-size: 1.8rem;
+  }
+}
+
+.left {
+  width: 100%;
+  max-width: 65.6rem;
+
+  @include flex-vert;
+
+  @media screen and (max-width: $tabletSmall) {
+    max-width: 100%;
+  }
+
+  p {
+    padding: 4.5rem 0 5.3rem 0;
+
+    @media screen and (max-width: $tabletSmall) {
+      padding: 3.5rem 0 4.5rem 0;
+    }
+
+    @media screen and (max-width: $phoneBig) {
+      padding: 2.5rem 0 3.5rem 0;
+    }
+  }
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(270deg);
+  left: -13rem;
+  gap: 6rem;
+}
+
+.link {
+  color: $color-grey;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+.buttons {
+  button {
+    @media screen and (max-width: $phoneBig) {
+      width: 100%;
+    }
+  }
+}

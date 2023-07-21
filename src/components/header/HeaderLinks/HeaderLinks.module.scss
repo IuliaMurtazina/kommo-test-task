@@ -1,0 +1,47 @@
+@import '../../../style/variables.scss';
+
+
+.links {
+  justify-self: center;
+  @include flex-center;
+  gap: min(4vw, 6rem);
+
+  @media screen and (max-width: $tabletBig) {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10rem;
+  }
+
+  @media screen and (max-width: $tabletSmall) {
+    gap: 7rem;
+  }
+
+  @media screen and (max-width: $phoneBig) {
+    gap: 5rem;
+  }
+}
+
+.link,
+.active {
+  text-decoration: none;
+
+  @media screen and (max-width: $tabletBig) {
+    font-size: 5rem;
+  }
+
+  @media screen and (max-width: $tabletSmall) {
+    font-size: 3rem;
+  }
+
+  @media screen and (max-width: $phoneBig) {
+    font-size: 2.2rem;
+  }
+}
+
+.link {
+  color: #fff;
+}
+
+.active {
+  color: $color-secondary;
+}

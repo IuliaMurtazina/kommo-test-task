@@ -1,0 +1,25 @@
+@import '../../../style/variables.scss';
+
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 2.4rem;
+  row-gap: 3.8rem;
+
+  @media screen and (max-width: $tabletBig) {
+    grid-template-rows: 2fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media screen and (max-width: $tabletSmall) {
+    grid-template-rows: 1.5fr 1fr 1fr;
+    column-gap: 1.4rem;
+    row-gap: 1.5rem;
+  }
+
+  @media screen and (max-width: $phoneBig) {
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: 1fr;
+  }
+}

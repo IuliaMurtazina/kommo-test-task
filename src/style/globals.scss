@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+@import "./variables.scss";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  max-width: 100vw;
+  // overflow-x: hidden;
+  font-size: 62.5%; //1rem=10px
+}
+
+body>* {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+}
+
+.content {
+  max-width: 144rem;
+  padding-left: min(4vw, 6rem);
+  padding-right: min(4vw, 6rem);
+  margin: 0 auto;
+  overflow: hidden;
+
+  @media screen and (max-width: $phoneBig) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.1rem 0;
+}
+
+.swiper-slide-active {
+  background-color: #3B3D46;
+  border-radius: 2rem;
+  padding: 1.1rem;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: 4.4rem;
+  height: 4.4rem;
+  background-color: #3F8CFF;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.swiper-button-prev {
+  left: 0;
+}
+
+.swiper-button-next {
+  right: 1%;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}

@@ -1,0 +1,29 @@
+// VARIABLES //
+
+$color-primary: #57B8FF;
+$color-primary-dark: #4ca0dc;
+$color-primary-light: #83c7f8;
+
+$color-secondary: #FAC422;
+$color-grey: #999;
+
+
+// MIXINS // 
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flex-vert {
+  display: flex;
+  flex-direction: column;
+}
+
+// BREAKPOINTS 
+
+$tabletBig: 1024px;
+
+$tabletSmall: 768px;
+
+$phoneBig: 480px;

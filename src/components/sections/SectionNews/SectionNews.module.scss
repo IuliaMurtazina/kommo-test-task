@@ -1,0 +1,51 @@
+@import '../../../style/variables.scss';
+
+.section {
+  @include flex-vert;
+  gap: 6.4rem;
+  padding-top: 13rem;
+  padding-bottom: 13rem;
+  background-color: #000;
+
+  @media screen and (max-width: $tabletBig) {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+
+  @media screen and (max-width: $tabletSmall) {
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+    gap: 4.4rem;
+  }
+
+  @media screen and (max-width: $phoneBig) {
+    padding-top: 5rem;
+  }
+}
+
+.top {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  @media screen and (max-width: $tabletSmall) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  button {
+    @media screen and (max-width: $phoneBig) {
+      width: 100%;
+    }
+  }
+
+
+  h2 {
+    max-width: 62.5rem;
+
+    @media screen and (max-width: $tabletBig) {
+      max-width: 52.5rem;
+    }
+  }
+}

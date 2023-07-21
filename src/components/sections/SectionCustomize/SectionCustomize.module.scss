@@ -1,0 +1,54 @@
+@import '../../../style/variables.scss';
+
+.section {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #2A313C;
+  position: relative;
+
+  @media screen and (max-width: $tabletBig) {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  p {
+    color: $color-grey;
+    font-size: 1.8rem;
+  }
+}
+
+.left {
+  position: absolute;
+  right: 54%;
+
+  @media screen and (max-width: $tabletBig) {
+    position: static;
+  }
+
+  img {
+    height: 100%;
+  }
+}
+
+.right {
+  width: 100%;
+  max-width: 59.6rem;
+  padding-top: 8.3rem;
+  padding-bottom: 8.3rem;
+  position: relative;
+  z-index: 5;
+
+  @media screen and (max-width: $tabletSmall) {
+    max-width: 100%;
+    padding-top: 6.3rem;
+  }
+
+  @media screen and (max-width: $phoneBig) {
+    padding-top: 5rem;
+  }
+
+  p {
+    padding: 3.8rem 3.5rem 5.4rem 0;
+    font-size: 2rem;
+  }
+}
